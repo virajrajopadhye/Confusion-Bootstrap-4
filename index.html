@@ -17,7 +17,7 @@
 
 <body>
    
-    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>  
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="loginModalBtn">
                 <span class="fa fa-sign-in"></span> Login</a>
             </span>
             
@@ -166,8 +166,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="submit" data-toggle="modal"
-                         class="btn btn-warning btn-block"  data-toggle="modal" data-target="#reservationModal">Reserve Table</button>
+                    <button id="reservationModalBtn" type="submit" 
+                         class="btn btn-warning btn-block"  >Reserve Table</button>
                         
                 </div>
             </div>
@@ -372,6 +372,20 @@
                 }
             
         });
+
+        $("#reservationModalBtn").click(function(){
+            $("#reservationModal").modal("show");
+
+        });
+
+        $("#loginModalBtn").click(function(){
+            $("#loginModal").modal("show");
+
+        });
+
+
+
+
     });
     </script>
         
