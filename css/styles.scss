@@ -2,10 +2,22 @@ $lt-gray: #ddd;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
+$modal-title-color: #fffaf0;
 
 // Height variables
 $carousel-item-height: 300px;
 
+
+.modal-header{
+    background: $background-light ;
+}
+.modal-body{
+    background: $background-pale ;
+}
+
+.modal-title, .close{
+    color : $modal-title-color;
+}
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
